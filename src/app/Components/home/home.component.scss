@@ -1,0 +1,423 @@
+*{
+    box-sizing: border-box;
+}
+
+.carousel-caption{
+
+    margin: 0;
+    padding: 0;
+   
+    background: -webkit-linear-gradient(rgba(184, 22, 170, 0.822), rgb(28, 185, 206));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+ 
+
+    h1{
+
+        font-style: italic;
+       
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    
+}
+
+.carousel{
+
+    width: 100%;
+
+    .carousel-item{
+
+        height: 380px;
+
+        img{
+            height: 700px;
+        }
+     
+    }
+
+}
+
+// Who we are css
+
+.second{
+
+    display: flex;
+    flex-direction: row;
+    margin: 5px 15px 5px 15px;
+
+    .one{
+
+       
+        width: 40%;
+        height: 500px;
+
+        .mission{
+            
+            img{
+                width:100%;
+                height: 450px;
+            }
+        }
+    }
+
+    .two{
+
+      width: 60%;
+      padding: 5px;
+
+        h1{
+            font-size: 32px;
+           
+
+        }
+        span{
+
+           color: #408cbd;
+           font-weight: 700;
+        }
+        p{
+
+            font-size: 15px;
+        }
+
+        h3{
+
+            color: black;
+           
+
+        }
+    }
+    tech-cards{
+        
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+//Our services css
+
+.tech-head{
+
+    .tech-title{
+
+        color: rgb(28, 185, 206);
+        text-align: center;
+        font-size: 40px;
+    }
+    .tech-para{
+
+        font-size: 15px 5px 15px;
+        padding: 5px 15px ;
+        text-align: center;
+    }
+}
+
+.tech-section{
+
+  
+
+    .tech-title{
+
+        columns: yellow;
+    }
+
+    
+
+    .tech-cards{
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 13px 13px;
+        margin: 4px 15px 4px 70px;
+       
+        
+    }
+
+.flip-card {
+    background-color: transparent;
+    width: 230px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+}
+
+
+// what makes us worthy to choose css
+
+.our-worth{
+
+    
+    padding: 5px;
+    margin: 5px 15px 5px 15px;
+
+    h1{
+        text-align: center;
+        color: rgb(28, 185, 206);
+    }
+    P{
+        font-size: 15px;
+       
+    }
+}
+
+//Succesful completion of projects
+
+.projects{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+
+
+    .project-intro{
+
+        width: 35%;
+        
+        h1{
+          color: navy;
+          font-size: 75px;
+          padding: 15px 15px 5px 15px;
+          background: -webkit-linear-gradient(#eee, #333);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+        }
+    }
+
+    .project-cnt{
+
+
+
+        width:75%;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+              Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+          }
+          
+          .main-container {
+            padding: 30px;
+          }
+          
+          /* HEADING */
+          
+          .heading {
+            text-align: center;
+          }
+          
+          .heading__title {
+            font-weight: 600;
+          }
+          
+          .heading__credits {
+            margin: 10px 0px;
+            color: #888888;
+            font-size: 25px;
+            transition: all 0.5s;
+          }
+          
+          .heading__link {
+            text-decoration: none;
+          }
+          
+          .heading__credits .heading__link {
+            color: inherit;
+          }
+          
+          /* CARDS */
+          
+          .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+          }
+          
+          .card {
+            margin: 20px;
+            padding: 20px;
+            width: 400px;
+            min-height: 200px;
+            display: grid;
+            grid-template-rows: 20px 50px 1fr 50px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+            transition: all 0.2s;
+          }
+          
+          .card:hover {
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+            transform: scale(1.01);
+          }
+          
+          .card__link,
+          .card__exit,
+          .card__icon {
+            position: relative;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+          }
+          
+          .card__link::after {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.6);
+            transition: all 0.5s;
+          }
+          
+          .card__link:hover::after {
+            width: 100%;
+          }
+          
+          .card__exit {
+            grid-row: 1/2;
+            justify-self: end;
+          }
+          
+          .card__icon {
+            grid-row: 2/3;
+            font-size: 30px;
+          }
+          
+          .card__title {
+            grid-row: 3/4;
+            font-weight: 400;
+            color: #ffffff;
+          }
+          
+          .card__apply {
+            grid-row: 4/5;
+            align-self: center;
+          }
+          
+          /* CARD BACKGROUNDS */
+          
+          .card-1 {
+            background: radial-gradient(#1fe4f5, #3fbafe);
+          }
+          WE ARE
+          .card-2 {
+            background: radial-gradient(#fbc1cc, #fa99b2);
+          }
+          
+          .card-3 {
+            background: radial-gradient(#76b2fe, #b69efe);
+          }
+          
+          .card-4 {
+            background: radial-gradient(#60efbc, #58d5c9);
+          }
+          
+          .card-5 {
+            background: radial-gradient(#f588d8, #c0a3e5);
+          }
+          
+          /* RESPONSIVE */
+          
+          @media (max-width: 1600px) {
+            .cards {
+              justify-content: center;
+            }
+          }
+          
+    }
+
+
+}
+
+
+
+//   Media Quries
+
+
+@media only screen and (max-width: 600px){
+	
+    .second{
+        display: flex;
+        flex-direction: column;
+
+        .one{
+            width: 100%;
+        }
+        .two{
+            width: 100%;
+        }
+    }
+
+    .projects{
+
+        flex-direction: column;
+        width: 100%;
+    .project-intro{
+
+    width: 100%;
+
+    }
+    .project-cnt{
+      
+      width: 100%;
+    }
+    }
+   
+    
+}
